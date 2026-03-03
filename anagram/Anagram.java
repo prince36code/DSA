@@ -5,11 +5,11 @@ public class Anagram {
        
          if(str1.length() != str2.length())return false;
          int[] count = new int[26];
-
+         // add frequescy of first string
          for(char c:str1.toCharArray()){
             count[c -'a']++;
          }
-
+         // add  removing frequency of second string
          for(char c: str2.toCharArray()){
             count[c-'a']--;
          }
